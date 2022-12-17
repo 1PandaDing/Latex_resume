@@ -7,7 +7,8 @@
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
-
+%\usepackage[papersize={14.8cm,21cm}]{geometry}
+%这里相当于对外部函数or包的引用,但这个文件夹里好像没有相关库，我们无法使用，库文件必须在本地才行
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
@@ -21,13 +22,15 @@
 %\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
  
 \section{Self Introduction}
- \ \ \  \ \ \ I am a student of School of Automotive at Tongji University. I will pursue a phd in Transportation Energy Systems Analysis at 3E Institute of Tsinghua University in 2023! My research interests include energy systems analysis for the transportation sector, including energy management and climate policy, Low-carbon technology strategies, life cycle analysis, and transportation energy strategies.
+\textbf{I am a student of School of Automotive at Tongji University. I will pursue a phd in Transportation Energy Systems Analysis at 3E Institute of Tsinghua University in 2023!} My research interests include energy systems analysis for the transportation sector, including energy management and climate policy, Low-carbon technology strategies, life cycle analysis, and transportation energy strategies.
+%我觉得{}像是字符串，里面的空格缩进什么的在内容上都是有所体现的
+
 
 % \section{\faGraduationCap\ 教育背景}
 \section{Education Background}
-\datedsubsection{\textbf{Tsinghua University},Manage Science and Energnering\textit{  PHD}}{2023.9 - TBD}
+\datedsubsection{\textbf{Tsinghua University},Manage Science and Energnering\textit{  PHD}}{2023.09 - 2028.06}
 
-\datedsubsection{\textbf{Tongji University},Automobile Engineering\textit{  Bachelor}}{2018.9 - 2023.6}
+\datedsubsection{\textbf{Tongji University},Automobile Engineering\textit{  Bachelor}}{2018.09 - 2023.06}
 \textbf{Rank 4/182 }(Top2\%),National Scholarship(×2),National Competition Awards(×3),Provincal Competition Awards  \par(×3)  ,Outstanding Student of Tongji University（×2）
 
 
@@ -50,18 +53,17 @@
 %section像是大分节，下面还有Subsection这种小分节
 
 \datedsubsection{\textbf{IMMOTORS}\ \ \ Strategic Department}
-{2022.11-\ TBD}
-\begin{itemize}
-  \item \textbf{Consumer Insight}\par I participated in the domestic and international new energy vehicle industry development trends and current automotive market insights, assisted in the development of new energy vehicle market focus on competing companies, brand development of special research.
-\end{itemize}
+{2022.11-\ 2023.03}
+
+  \textbf{Consumer Insight}\par I participated in the domestic and international new energy vehicle industry development trends and current automotive market insights, assisted in the development of new energy vehicle market focus on competing companies, brand development of special research.
+
 %输入\\ 结果即只进行单纯换行,并无缩进 
 %输入 \par 显示结果为自动换行加缩进 
 
 \datedsubsection{\textbf{NIO} \ \ \ Digital Cockpit Department }
-{2022.8-\ 2022.11}
-\begin{itemize}
-  \item \textbf{Project Management}\par  During my internship at NIO, I was involved in the project management of the NIO NT2 and NT3 software platforms, driving all departments through a series of processes from requirements elicitation, development scheduling and test flow in an agile and efficient manner.
-\end{itemize}
+{2022.08-\ 2022.11}
+ \textbf{Project Management}\par  During my internship at NIO, I was involved in the project management of the NIO NT2 and NT3 software platforms, driving all departments through a series of processes from requirements elicitation, development scheduling and test flow in an agile and efficient manner.
+
 
 % \begin{onehalfspacing}
 % \end{onehalfspacing}
@@ -78,21 +80,16 @@
 % \end{onehalfspacing}
 
 \section{Competition Awards}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.2ex]
-%   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
-  \item National University Mathematics Competition \textbf{Shanghai Third Prize},\ 2021.12
-%\quad  和  \  都能做空格使用
-  \item University Students' Computer Application Ability Competition \textbf{Shanghai Second Prize},\ 2022.05
-  \item  SAS Data Analysis Competition for Chinese Universities \textbf{National First Prize},\ 2021.12
-
-  \item National Student Computer Design Competition  \textbf{National Third Prize},\ 2022.07
-  \item American College Mathematical Modelling Competition \textbf{Honorable Mention},\ 2021.04
-  \item National University Students Intelligent Car Race  \textbf{ East China Third Prize},\ 2021.08
+\textbf{Shanghai Third Prize}\ {National University Mathematics Competition} \   \hfill 2021.12  \\
+\textbf{Shanghai Second Prize}\ {University Students' Computer Application Ability Competition} \  \hfill 2022.05 \\
+ \textbf{National First Prize}\ {SAS Data Analysis Competition for Chinese Universities} \ \hfill 2021.12   \\
+\textbf{National Third Prize}\ {National Student Computer Design Competition} \  \hfill 2022.07   \\
+ \textbf{East China Third Prize} \ {National University Students Intelligent Car Race} \ \hfill 2021.08 
+%这段代码是GPT给我写的，我让他帮忙将date放在后面
 
 %textit是斜体}
 %   \item 电视节目"爸爸去哪儿"可视化分析展示, \textit{https://hijiangtao.github.io/variety-show-hot-spot-vis/}
-\end{itemize}
+
 
 % \section{\faHeartO\ 项目/作品摘要}
 % \section{项目/作品摘要}
@@ -107,30 +104,30 @@
 % \section{\faInfo\ 社会实践/其他}
 \section{Research Experiences}
 % increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.2ex]
 %   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
-  \item \textbf{Machine Learning-based Path Prediction for Electromagnetic Vehicles},\ 2020.03-2021.03  \par
-Based on the MobileNet-SSD detection algorithm, an end-to-end autonomous driving model was trained using the camera capture images after canny edge detection as input and the directional control information of the intelligent vehicle as output and deployed to the edge computing board.
+
+ \textbf{Machine Learning-based Path Prediction for Electromagnetic Vehicles}\hfill 2020.03-2021.03  \\
+Based on the MobileNet-SSD detection algorithm, an end-to-end autonomous driving model was trained using the camera capture images after canny edge detection as input and the directional control information of the intelligent vehicle as output and deployed to the edge computing board. \\
 
 %\quad  和  \  都能做空格使用
-  \item \textbf{Millimeter Wave Radar of Human Posture and Vital Signs Sensing Technology },\ 2021.03-2022.03  \par
+ \textbf{Millimeter Wave Radar of Human Posture and Vital Signs Sensing Technology }\hfill2021.03-2022.03  
+%使用hfill将日期靠右 from GPT
+
 Based on the IWR6843 millimeter wave radar board, separate measurements of breathing and heartbeat signals were completed 
 by differential filtering and variable modal decomposition to achieve multi-target detection of life features at different angles from the same distance. Based on the camera, the detection algorithm for driver blinking and head-down behavior was programmed, combined with face feature points recognition. 
 %我不用在编辑器里修改整段话的段落和行的，因为编译出来后中间的空格都是无效的
-\end{itemize}
 
 
 \section{Social Activities}
-\begin{itemize}[parsep=0.2ex]
-  \item \textbf{Member of Tu-Smart Car Team}  \par
+%\begin{itemize}[parsep=0.2ex]
+\textbf{Member of Tu-Smart Car Team}  \par
 Responsible for the structural design and programming of smart cars, I have been invited to give scientific lectures on
-driverless technology and hold extra-curricular activities at Shanghai High School several times.
+driverless technology and hold extra-curricular activities at Shanghai High School several times. \\
 
- \item  \textbf{Faculty Innovation and Entrepreneurship Base Officer} \par
+ \textbf{Faculty Innovation and Entrepreneurship Base Officer} \par
 Regularly organizing academic discussions, participating in the recording and presentation of the online course "Automotive
 Vibration ", and engaging in many voluntary activities.
 
-\end{itemize}
 
 %% Reference
 %\newpage
